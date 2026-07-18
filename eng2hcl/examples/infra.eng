@@ -1,0 +1,9 @@
+# Eng2HCL example: a small AWS stack written in structured English
+
+create aws_s3_bucket named "my_data" with set acl to "private" and set region to "us-east-1"
+
+create aws_instance named "WebServer" with set ami to "ami-0abc123" and set instance_type to "t2.micro" and set monitoring to true
+
+create aws_vpc named "main-vpc" with set cidr_block to "10.0.0.0/16"
+
+create aws_db_instance named "appdb" with set engine to "postgres" and set instance_class to "db.t3.micro" and set allocated_storage to 20

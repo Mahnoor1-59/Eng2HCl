@@ -1,0 +1,5 @@
+# Example with deliberate errors for the semantic analyzer
+
+create aws_instance named "Server1" with set instance_type to "t2.micro"
+create aws_instance named "Server1" with set ami to "ami-1" and set instance_type to "huge.xlarge"
+create aws_lambda named "fn"
